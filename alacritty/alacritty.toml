@@ -1,0 +1,26 @@
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+shell = "/opt/homebrew/bin/nu"
+# shell = "/bin/zsh"
+
+[window]
+option_as_alt = "Both"
+
+[font]
+normal.family = "MesloLGL Nerd Font Mono"
+bold.family = "MesloLGL Nerd Font Mono"
+italic.family = "MesloLGL Nerd Font Mono"
+bold_italic.family = "MesloLGL Nerd Font Mono"
+
+[keyboard]
+bindings = [
+    { key = "N",      mods = "Command",         action = "SpawnNewInstance"},
+    { key = "Q",      mods = "Command",         action = "Quit"},
+    { key = "W",      mods = "Command",         action = "Quit"},
+    { key = "F",      mods = "Command|Control", action = "ToggleFullscreen"}
+]

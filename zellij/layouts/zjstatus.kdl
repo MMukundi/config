@@ -1,0 +1,54 @@
+plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
+    format_left   "{mode}{tabs}"
+    format_center "{session}"
+    format_right  " #[fg=16]#[fg=black,bg=16,bold] #[bg=black] {swap_layout}#[fg=0]"
+    format_space  ""
+
+    hide_frame_for_single_pane "true"
+
+    // tab_normal   " {name} #[fg=0,bg=blue] {index}#[fg=blue]"
+    // tab_active   " #[fg=0]#[none,bg=0]{name} #[fg=0,bg=16] {index}#[none,fg=16]"
+
+    // Curved boundaries
+    tab_normal   " #[fg=blue]#[fg=0,bg=blue]{index} #[none] {name} "
+    tab_active   " #[fg=16]#[fg=black,bg=16,bold]{index} #[bg=black] {name}#[fg=0]"
+    
+    mode_normal        "#[bg=green,fg=0,bold]#[fg=green]"
+    mode_locked        "#[bg=blue,fg=0,bold] #[fg=blue]"
+    mode_resize        "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_pane          "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_tab           "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_scroll        "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_enter_search  "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_search        "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_rename_tab    "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_rename_pane   "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_session       "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_move          "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_prompt        "#[bg=16,fg=0,bold] {name}#[fg=16]"
+    mode_tmux          "#[bg=16,fg=0,bold] {name}#[fg=16]"
+
+    // Flat boundaries
+    // tab_normal   " #[fg=0,bg=blue] {index} #[none] {name} "
+    // tab_active   " #[fg=0,bg=16] {index} #[bg=0] {name} "
+    
+    // mode_normal        "#[bg=green,bold] "
+    // mode_locked        "#[bg=blue,fg=0,bold]  "
+    // mode_resize        "#[bg=16,fg=0,bold] {name} "
+    // mode_pane          "#[bg=16,fg=0,bold] {name} "
+    // mode_tab           "#[bg=16,fg=0,bold] {name} "
+    // mode_scroll        "#[bg=16,fg=0,bold] {name} "
+    // mode_enter_search  "#[bg=16,fg=0,bold] {name} "
+    // mode_search        "#[bg=16,fg=0,bold] {name} "
+    // mode_rename_tab    "#[bg=16,fg=0,bold] {name} "
+    // mode_rename_pane   "#[bg=16,fg=0,bold] {name} "
+    // mode_session       "#[bg=16,fg=0,bold] {name} "
+    // mode_move          "#[bg=16,fg=0,bold] {name} "
+    // mode_prompt        "#[bg=16,fg=0,bold] {name} "
+    // mode_tmux          "#[bg=16,fg=0,bold] {name} "
+    
+    datetime          "#[bg=green,fg=0]{format} "
+    datetime_format   "%H:%M %m/%d"
+    datetime_timezone "America/Denver"
+}
+
